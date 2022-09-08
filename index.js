@@ -15,7 +15,7 @@ app.use('/', (req,res)=>{
     res.send('port stated')
 })
 
-
+console.log('mongo uri',process.env.MONGO_URL);
 app.listen(5000, () => {
     console.log('app listing to port')
 })
